@@ -71,15 +71,80 @@ body {
 .hero-banner h2 {
   margin: 0;
 }
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  margin: 0;
+/*Portfolio container*/
+.image-link {
+  position: relative;
+  display: inline-block;
 }
 
-p {
+.image-link img {
+  width: 100%; /* Ensure the image takes the full width of the container */
+  border-radius: 8px; /* Add rounded corners to the image if desired */
+}
+
+.text-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white; /* Set the text color */
+}
+
+.text-overlay p {
   margin: 0;
+  font-size: 16px; /* Adjust the font size as needed */
+  font-weight: bold; /* Adjust the font weight as needed */
+}
+
+.first-image {
+  width: 200%; /* Adjust the width of the first image as needed */
+}
+
+/* Arrange other images in two columns */
+.work-images {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Two columns with equal width */
+  gap: 20px; /* Adjust the gap between images */
+}
+
+/* Apply styles to image links and text overlay */
+.image-link {
+  position: relative;
+  display: block; /* Change from inline-block to block to fill the grid columns */
+}
+
+.image-link img {
+  width: 100%; /* Ensure the image takes the full width of its container */
+  border-radius: 8px; /* Add rounded corners to the image if desired */
+}
+
+.text-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white; /* Set the text color */
+}
+
+.text-overlay p {
+  margin: 0;
+  font-size: 16px; /* Adjust the font size as needed */
+  font-weight: bold; /* Adjust the font weight as needed */
+}
+
+/*contact*/
+.contact {
+  text-align: center;
+  
+}
+
+.contact-info {
+  margin-top: 20px;
+}
+
+.contact-info p {
+  margin: 5px 0;
+  font-size: 23px;
 }
