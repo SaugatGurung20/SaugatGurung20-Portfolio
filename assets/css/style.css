@@ -71,6 +71,10 @@ body {
 .hero-banner h2 {
   margin: 0;
 }
+h3, h4, h5 {
+  font-size: 40px;
+  font-family: fantasy;
+}
 /*Portfolio container*/
 .image-link {
   position: relative;
@@ -78,8 +82,8 @@ body {
 }
 
 .image-link img {
-  width: 100%; /* Ensure the image takes the full width of the container */
-  border-radius: 8px; /* Add rounded corners to the image if desired */
+  width: 100%; 
+  border-radius: 8px;
 }
 
 .text-overlay {
@@ -88,35 +92,33 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
-  color: white; /* Set the text color */
+  color: white;
 }
 
 .text-overlay p {
   margin: 0;
-  font-size: 16px; /* Adjust the font size as needed */
-  font-weight: bold; /* Adjust the font weight as needed */
+  font-size: 16px; 
+  font-weight: bold; 
 }
 
 .first-image {
-  width: 200%; /* Adjust the width of the first image as needed */
+  width: 200%; 
 }
 
-/* Arrange other images in two columns */
 .work-images {
   display: grid;
-  grid-template-columns: repeat(2, 1fr); /* Two columns with equal width */
-  gap: 20px; /* Adjust the gap between images */
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px; 
 }
 
-/* Apply styles to image links and text overlay */
 .image-link {
   position: relative;
-  display: block; /* Change from inline-block to block to fill the grid columns */
+  display: block;
 }
 
 .image-link img {
-  width: 100%; /* Ensure the image takes the full width of its container */
-  border-radius: 8px; /* Add rounded corners to the image if desired */
+  width: 100%;
+  border-radius: 8px;
 }
 
 .text-overlay {
@@ -125,16 +127,20 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
-  color: white; /* Set the text color */
+  color: white;
 }
 
 .text-overlay p {
   margin: 0;
-  font-size: 16px; /* Adjust the font size as needed */
-  font-weight: bold; /* Adjust the font weight as needed */
+  font-size: 40px;
+  font-weight: bold;
 }
 
+p {
+  color: skyblue;
+}
 /*contact*/
+
 .contact {
   text-align: center;
   
@@ -147,4 +153,53 @@ body {
 .contact-info p {
   margin: 5px 0;
   font-size: 23px;
+  display: inline-block;
+}
+.contact-info p.email {
+  margin-right: 20px;
+}
+
+/* responsive media queries*/
+@media only screen and (max-width: 768px) {
+  .top-nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .top-nav li {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  .page-section {
+    margin-bottom: 20px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .top-nav {
+    padding: 10px;
+  }
+
+  .top-nav li {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  .page-section {
+    margin-bottom: 10px;
+  }
+
+  .hero-banner {
+    padding: 30px;
+  }
+
+  .hero-content {
+    margin-top: 20px;
+  }
+
+  .profile-photo {
+    width: 120px;
+    height: 120px;
+  }
 }
